@@ -1,5 +1,6 @@
 body {
     background-color: #151859;
+    font-family: 'Bebas Neue', cursive;
 }
 
 #container {
@@ -7,10 +8,12 @@ body {
     width: 900px;
     margin: 20px auto;
     border-radius: 20px 20px 0 0;
+    box-shadow: 5px 5px 10px #000;
 }
 
 header {
-    padding-top: 20px;
+    padding-top: 20px 0;
+    background-color: lightskyblue;
     border-radius: 20px 20px 0 0;
 }
 
@@ -24,4 +27,74 @@ header h1 {
     font-size: 2.5em;
     text-align: center;
     color:#151859;
+    text-shadow: 2px 2px 2px black;
+}
+
+nav {
+   background-color:#F8F2DC ; 
+   padding-top: 0px;
+   text-align: center; 
+}
+
+nav a {
+   display: inline-block;
+   background-color: lightskyblue;
+   height: 50px;
+   width: 175px;
+   font-size: 1.5em;
+   font-weight: bold;
+   line-height: 50px;
+   color: slategray;
+   text-shadow: 2px 2px 2px black;
+   text-decoration: none;
+   border-radius: 10px 10px 0 0;
+   margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #151859;
+    color: #F8F2DC;
+}
+
+main {
+    background-color: lightskyblue;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+     
+}
+main h2 {
+    text-align: center;
+    color: #151859;
+    font-size: 2em;
+}
+
+main img {
+    display:block;
+    width: 50%;
+    margin: 20px auto;
+    background-color: #F8F2DC;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+footer {
+    background-color: lightskyblue;
+    padding: 60px 0;
+    color: #F8F2DC;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.active{
+    background-color: #151859;
+    color: #F8F2DC;
+}
+
+.pro_head{
+    text-align: center;
+    color:#151859 ;
+    font-size: 1.5em;
+
 }
