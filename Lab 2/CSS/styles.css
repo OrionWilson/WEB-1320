@@ -1,0 +1,27 @@
+body {
+    background-color: #151859;
+}
+
+#container {
+    background-color:#F8F2DC;
+    width: 900px;
+    margin: 20px auto;
+    border-radius: 20px 20px 0 0;
+}
+
+header {
+    padding-top: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+header img {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color:#151859;
+}
