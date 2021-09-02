@@ -11,7 +11,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Links
 
-(http://127.0.0.1:5500/index.html)
+[link](http://127.0.0.1:5500/index.html)
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
