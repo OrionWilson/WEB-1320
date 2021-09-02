@@ -4,8 +4,6 @@
 
 ### Links for Projects
 
-
-
 Link for Lab 2 :[link](http://127.0.0.1:5500/index.html)
 
 
