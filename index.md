@@ -7,5 +7,5 @@
 Link for Lab 2 :[link](http://127.0.0.1:5500/index.html)
 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
 
