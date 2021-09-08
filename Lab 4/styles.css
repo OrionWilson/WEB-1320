@@ -1,0 +1,87 @@
+/* Global Styles */
+
+body {
+    background-color: darkolivegreen;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Mobile Styles */
+#container {
+    background-color:green;
+    margin: 10px;
+    border: 4px solid sandybrown;
+}
+header {
+    background-image: url(../images/gcourse1.jpg);
+    background-size: cover;
+    padding: 60px 0;
+}
+
+header h1{
+    color:sandybrown;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+}
+
+nav li a { 
+    display: block;
+    background-color: darkolivegreen;
+    color:sandybrown;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+nav, section, aside, .col, footer {
+    background-color: sandybrown;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 4px solid darkolivegreen;
+}
+
+.button {
+    display: block;
+    background-color: darkolivegreen;
+    color:sandybrown;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+nav li a:hover, .button:hover {
+    background-color: green;
+    text-shadow: 1px 1px 1px black;
+}
+
+h2, h3 {
+    color:green;
+    text-shadow: 1px 1px 1px black;
+    text-align: center; 
+    
+
+}
+/* Tablet Styles */
+
+
