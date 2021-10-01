@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+        #upper_flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        table {
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #262626;
+            border: 0.30em solid #262626;
+            
+        }
+        
+        td, th {
+            border: 0.10em solid #f2f2f2;
+            font-family: 'Josefin Sans', sans-serif;
+            color:#f2f2f2;
+        }
+        header p {
+            font-family: 'Josefin Sans', sans-serif;
+            color:#262626;
+        
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div id="bannerimage">
+        
+        <img src="images/nclogo.png" alt="nclogo1">
+        <h1> The Nebula Corporation </h1>
+    </div>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="news.html">News</a>
+        <a href="products.html">Products</a>
+        <a class="active" href="contact.html">Contact</a>
+    </div>
+    <div id="bannerimage2">
+       <div class="logo2"> <img src="images/logob.png" alt="b2logo"> </div>
+    </div>
+        
+    
+
+<div id="container">
+    <nav>
+        <button onclick="window.location.href='about.html';" class="bouncy button1">
+            <img src="images/nclogo.png" alt="logo">
+            <span class="text1">About</span> </button>
+        <button onclick="window.location.href='news.html';" class="bouncy button1" style="animation-delay:0.07s">
+            <img src="images/newsbutton.png" alt="logo">
+            <span class="text1">News</span> </button>
+        <button onclick="window.location.href='careers.html';" class="bouncy button1" style="animation-delay:0.14s">
+            <img src="images/carbutton.png" alt="logo">
+            <span class="text1">Careers</span> </button>
+        <button onclick="window.location.href='products.html';" class="bouncy button1" style="animation-delay:0.21s">
+            <img src="images/shopbutton.png" alt="logo">
+            <span class="text1">Our Products</span> </button>
+        <button onclick="window.location.href='contact.html';" class="bouncy button1" style="animation-delay:0.28s">
+            <img src="images/contactbutton.png" alt="logo">
+            <span class="text1">Contact Us</span> 
+        </button>
+    </nav>
+    <header>
+        <h1>Contact Us</h1>
+        <p>The Nebula Corp is happy to answer any questions or concerns our customers might have. The table below will show you all the ways you can come in contact with our staff.</p>
+    </header>
+    
+    <main>
+        <div id="upper_flex">
+            <div style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <th>NC Headquaters</th>
+                    <th>Customer Service</th>
+                    <th>Hiring Manager</th>
+                </tr>
+                <tr>
+                    <td>(456) 884-2387</td>
+                    <td>(874) 870-8792</td>
+                    <td>(456) 987-8769</td>
+                </tr>
+                <tr>
+                    <td>headquaters@nebulacorp.com</td>
+                    <td>customerhelp@nebulacorp.com</td>
+                    <td>careers@nebulacorp.com</td>
+                </tr>
+                <tr>
+                    <td>1600 Amphitheatre Pkwy, Mountain View, CA 94043</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Visitor Hours: 6am-7pm</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+            </table>
+        </div>
+        </div>
+
+        <div id="lower_flex">
+            <div class="col">
+                <h3>Nebula Corp's Matter Transporter</h3>
+                <img src="images/device.jpg" alt="Drange">
+                <p>Just released! Buy it today and get free shipping </p>
+                
+                <a class="button" href="products.html">Nebula Corp Shop...</a>
+            </div>
+            <div class="col">
+                <h3>Interested in having a future at Nebula Corp.?</h3>
+                <img src="images/careers1.jpg" alt="Drange">
+                <p> Visit our careers page to find out if Nebula Corp is right for you.</p>
+                <a class="button" href="careers.html">Learn More...</a>
+            </div>
+            <div class="col">
+                <h3>Want to know the latest news?</h3>
+                <img src="images/mars.jpg" alt="Drange">
+                <p> Visit our news page to see exicting updates on The Nebula Corporation </p>
+                <a class="button" href="news.html">Learn More...</a>
+            </div>
+        </div>
+    </main>
+    <footer>&copy; 2021 Nebula Corporation</footer>
+
+</div>
+</body>
+
+</html>

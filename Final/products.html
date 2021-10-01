@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .button2 {
+            box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+            background-color: transparent;
+            width: 200px;
+            border: 0.10em solid #F2F2F2;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 700;
+            color: #F2F2F2;
+            text-align: left;
+            transition: all 0.15s;
+            border-radius: 10px;
+        }
+        
+        .button2 p {
+            color: #F2F2F2;
+        }
+        
+        .button2:hover {
+            
+            box-shadow: inset 2000px 0 0 0 rgba(57, 123, 245, 0.3);
+            
+            }
+        
+        
+        .morestuff {
+            max-width: 400px;
+            max-height: 135px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #262626;
+            border: 0.30em solid #262626;
+            font-family: 'Josefin Sans', sans-serif;
+            color: #f2f2f2;;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .morestuff h3 {
+            padding: 5px;
+        }
+        
+        section img {
+            max-width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            box-shadow: 6px 6px 6px #494949;
+            border-radius: 10px;
+        }
+        
+        .slides input { display: none; }
+        
+        .slide-container { display: block; }
+        
+        
+        .slides {
+            padding: 0;
+            width: 609px;
+            height: 420px;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        
+        .slide {
+            top: 0;
+            opacity: 0;
+            width: 609px;
+            height: 420px;
+            display: block;
+            position: absolute;
+        
+            transform: scale(0);
+        
+            transition: all .7s ease-in-out;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .nav label {
+            width: 200px;
+            height: 100%;
+            display: none;
+            position: absolute;
+        
+            opacity: 0;
+            z-index: 9;
+            cursor: pointer;
+        
+            transition: opacity .2s;
+        
+            color: #FFF;
+            font-size: 156pt;
+            text-align: center;
+            line-height: 380px;
+            font-family: "Varela Round", sans-serif;
+            background-color: rgba(255, 255, 255, .3);
+            text-shadow: 0px 0px 15px rgb(119, 119, 119);
+        }
+        
+        .slide:hover + .nav label { opacity: 0.5; }
+        
+        .nav label:hover { opacity: 1; }
+        
+        .nav .next { right: 0; }
+        
+        input:checked + .slide-container  .slide {
+            opacity: 1;
+        
+            transform: scale(1);
+        
+            transition: opacity 1s ease-in-out;
+        }
+        
+        input:checked + .slide-container .nav label { display: block; }
+        
+        .nav-dots {
+          width: 100%;
+          bottom: 9px;
+          height: 11px;
+          display: block;
+          position: absolute;
+          text-align: center;
+        }
+        
+        .nav-dots .nav-dot {
+          top: -5px;
+          width: 11px;
+          height: 11px;
+          margin: 0 4px;
+          position: relative;
+          border-radius: 100%;
+          display: inline-block;
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+        
+        .nav-dots .nav-dot:hover {
+          cursor: pointer;
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        input#img-1:checked ~ .nav-dots label#img-dot-1,
+        input#img-2:checked ~ .nav-dots label#img-dot-2,
+        input#img-3:checked ~ .nav-dots label#img-dot-3,
+        input#img-4:checked ~ .nav-dots label#img-dot-4
+         {
+          background: rgba(0, 0, 0, 0.8);
+        }
+        aside {
+            padding-bottom: 20px;
+        }
+        @media (max-width:1137px) {
+        
+            #upper_flex {
+                overflow: hidden;
+                display: block; }
+            section{
+                margin: auto;
+                width: 100%;
+            }
+            aside {
+            width: 85%;
+            margin: auto;
+        
+        }
+        }
+        
+        
+        
+        @media (max-width: 524px) {
+            #upper_flex {
+                overflow: hidden;
+            padding-bottom: 20px; }
+        
+            .morestuff {
+                display: block;
+                max-height: 300px;
+        
+            }
+           
+        
+        
+        }
+        
+
+        
+        </style>
+</head>
+<body>
+    <div id="bannerimage">
+        
+        <img src="images/nclogo.png" alt="nclogo1">
+        <h1> The Nebula Corporation </h1>
+    </div>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="news.html">News</a>
+        <a class="active" href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div id="bannerimage2">
+       <div class="logo2"> <img src="images/logob.png" alt="b2logo"> </div>
+    </div>
+        
+    
+
+<div id="container">
+    <nav>
+        <button onclick="window.location.href='about.html';" class="bouncy button1">
+            <img src="images/nclogo.png" alt="logo">
+            <span class="text1">About</span> </button>
+        <button onclick="window.location.href='news.html';" class="bouncy button1" style="animation-delay:0.07s">
+            <img src="images/newsbutton.png" alt="logo">
+            <span class="text1">News</span> </button>
+        <button onclick="window.location.href='careers.html';" class="bouncy button1" style="animation-delay:0.14s">
+            <img src="images/carbutton.png" alt="logo">
+            <span class="text1">Careers</span> </button>
+        <button onclick="window.location.href='products.html';" class="bouncy button1" style="animation-delay:0.21s">
+            <img src="images/shopbutton.png" alt="logo">
+            <span class="text1">Our Products</span> </button>
+        <button onclick="window.location.href='contact.html';" class="bouncy button1" style="animation-delay:0.28s">
+            <img src="images/contactbutton.png" alt="logo">
+            <span class="text1">Contact Us</span> 
+        </button>
+    </nav>
+    <header>
+        <h1>Product Page</h1>
+
+    </header>
+    
+    <main>
+        <div id="upper_flex">
+            <section>
+                <div style="overflow-x:auto;">
+                <ul class="slides">
+                    <input type="radio" name="radio-btn" id="img-1" checked />
+                    <li class="slide-container">
+                    <div class="slide">
+                      <img src="images/device.jpg" />
+                        </div>
+                    <div class="nav">
+                      <label for="img-6" class="prev">&#x2039;</label>
+                      <label for="img-2" class="next">&#x203a;</label>
+                    </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide">
+                          <img src="images/device2.jpg" />
+                        </div>
+                    <div class="nav">
+                      <label for="img-1" class="prev">&#x2039;</label>
+                      <label for="img-3" class="next">&#x203a;</label>
+                    </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide">
+                          <img src="images/device3.jpg" />
+                        </div>
+                    <div class="nav">
+                      <label for="img-2" class="prev">&#x2039;</label>
+                      <label for="img-4" class="next">&#x203a;</label>
+                    </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="img-4" />
+                    <li class="slide-container">
+                        <div class="slide">
+                          <img src="images/device4.jpg" />
+                        </div>
+                    <div class="nav">
+                      <label for="img-3" class="prev">&#x2039;</label>
+                      <label for="img-5" class="next">&#x203a;</label>
+                    </div>
+                    </li>
+                
+                    <li class="nav-dots">
+                      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                    </li>
+                </ul>
+                </div>
+                
+            </section>
+            <aside>
+                <h2>Matter Transporter (NCMT)</h2>
+                <p> Meet our newest product! The Nebula Corp Matter Transporter or the NCMT is made to be installed and used in your own home. Simply link your NCMT with any other NCMT by following chapters 1-25 in the provided instruction handbook and its ready for use! The NCMT is able to instantly transport any physical matter placed within the machine over to another pared machine regardless of the distance inbetween. DISCLAIMER: Do not consume any food that has been transported through the NCMT, If you have please contact customer support as soon as possible and a hasmat team will be sent to your location.  </p>
+                <div class="morestuff">
+                    <h3>Other Products</h3>
+                    <button onclick="window.location.href='products1.html';" class="bouncy button2" style="animation-delay:0.07s">
+                        <p>Black Hole Generator</p> </button>
+                    <button onclick="window.location.href='products2.html';" class="bouncy button2" style="animation-delay:0.014s">
+                        <p>Transmutation Device</p> </button>
+                        
+                    </div>
+            
+            
+            </aside>
+        </div>
+
+        <div id="lower_flex">
+            <div class="col">
+                <h3>Nebula Corp's Matter Transporter</h3>
+                <img src="images/device.jpg" alt="Drange">
+                <p>Just released! Buy it today and get free shipping </p>
+                
+                <a class="button" href="products.html">Nebula Corp Shop...</a>
+            </div>
+            <div class="col">
+                <h3>Interested in having a future at Nebula Corp.?</h3>
+                <img src="images/careers1.jpg" alt="Drange">
+                <p> Visit our careers page to find out if Nebula Corp is right for you.</p>
+                <a class="button" href="careers.html">Learn More...</a>
+            </div>
+            <div class="col">
+            <h3>Questions or Concerns?</h3>
+                <img src="images/rep.jpg" alt="Drange">
+                <p>Nebula Corp's team of friendly customer service represenatives are happy to answer any questions you might have, visit our contact page to find out how to reach us.</p>
+                <a class="button" href="contact.html">Learn More...</a>
+            </div>
+        </div>
+    </main>
+    <footer>&copy; 2021 Nebula Corporation</footer>
+
+</div>
+</body>
+
+</html>

@@ -1,20 +1,38 @@
 /* Global Styles */
 
 body {
-    background-color: darkolivegreen;
+    background-color: #022601;
 }
 
 img {
     display: block;
-    max-width: 100%;
+    max-width: 65%;
     margin: 0 auto;
+    
 }
+
+iframe {
+    display: block;
+    background-image: linear-gradient( #038C65, #DCEAF3);
+    padding: 20px;
+    border: 4px solid #022601;
+    border-radius: 15px 15px 15px;
+}
+
+p {
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka One', cursive;
+}
+
 
 /* Mobile Styles */
 #container {
-    background-color:green;
+    background-color:#038C65;
     margin: 10px;
-    border: 4px solid sandybrown;
+    border: 4px solid #DCEAF3;
 }
 header {
     background-image: url(../images/gcourse1.jpg);
@@ -23,9 +41,11 @@ header {
 }
 
 header h1{
-    color:sandybrown;
-    text-shadow: 2px 2px 2px black;
+    color:#DCEAF3;
+    text-shadow: 10px 10px 10px black, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-align: center;
+    font-size: 3em;
+    
 }
 
 nav ul {
@@ -39,8 +59,8 @@ nav li {
 
 nav li a { 
     display: block;
-    background-color: darkolivegreen;
-    color:sandybrown;
+    background-color: #022601;
+    color:#DCEAF3;
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -48,40 +68,195 @@ nav li a {
     text-decoration: none;
     font-size: 1.2em;
     border-radius: 10px;
+    font-family: 'Fredoka One', cursive;
 }
 nav, section, aside, .col, footer {
-    background-color: sandybrown;
+    background-color: #DCEAF3;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    border: 4px solid darkolivegreen;
+    border: 4px solid #022601;
 }
-
+footer {
+    font-family: 'Architects Daughter', cursive;
+}
 .button {
     display: block;
-    background-color: darkolivegreen;
-    color:sandybrown;
+    background-color: #022601;
+    color:#DCEAF3;
     height: 40px;
+    width: 200px;
     line-height: 40px;
     text-align: center;
     margin: 10px 0;
     text-decoration: none;
     font-size: 1.2em;
+    margin: 10px auto;
     border-radius: 10px;
+    font-family: 'Fredoka One', cursive;
 }
 
 nav li a:hover, .button:hover {
-    background-color: green;
-    text-shadow: 1px 1px 1px black;
+    background-color: #038C65;
+    text-shadow: 2px 2px 2px black;
 }
 
 h2, h3 {
-    color:green;
-    text-shadow: 1px 1px 1px black;
+    color:#038C65;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-align: center; 
+    font-size: 2em;
     
 
 }
+
+
+section img, aside img {
+    width: 40%
+}
+
+footer {
+    text-align: center;
+    color: #038C65;
+    font-size: 1.5em;
+}
+
+.single_col {
+    width: 85%;
+    margin: 20px auto;
+    width: 75%;
+}
+
+audio,iframe {
+    display: block;
+    margin: 20px auto;
+    width: 75%;
+}
+
+.gallery_img {
+    background-image: linear-gradient( #038C65, #DCEAF3);
+    padding: 10px;
+    border: 4px solid #022601;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 95%;
+    
+}
+
+table {
+    display: none;
+}
 /* Tablet Styles */
+
+@media(min-width: 768px) {
+    header {
+        padding: 125px;
+    }
+
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    nav li {
+        display: inline-block;
+
+    }
+
+    nav li a {
+        height: 58px;
+        line-height: 50px;
+        width: 200px;
+    }
+
+    #upper_flex {
+        display: flex; 
+    }
+
+    section, aside {
+        width: 50%;
+
+    }
+
+    aside img {
+        width: 50%;
+    }
+
+    .col img {
+        width: 75%;
+        border-radius: 10px;
+        border: 4px solid #038C65;
+
+    }
+}
+/* Desktop Styles */
+
+@media(min-width: 1024px) {
+    #container {
+        width: 75%;
+        margin: 20px auto;
+        border: 4px solid #DCEAF3;
+        border-radius: 20px;
+        
+    }
+
+    header {
+        border-radius: 20px 20px 0 0;
+
+    }
+
+    nav li a {
+        margin: 0 20px;
+    
+    }
+
+    #lower_flex {
+        display: flex;
+
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .col img {
+        width: 90%;
+
+    }
+
+    .single_col {
+        width: 100%;
+        
+        
+    }
+   
+    table, tr, td {
+        background-image: linear-gradient( #038C65, #DCEAF3);
+        padding: 10px;
+        border: 4px solid #022601;
+        border-radius: 10px;
+        margin: 5px auto;
+    }
+
+    table img{
+        width: 100%;
+        border: 4px solid #022601;
+        border-radius: 10px;
+    }
+
+    .gallery {
+        display: none;
+    }
+
+    table {
+        display: block;
+    }
+
+    
+    
+    
+
+}
+
 
 

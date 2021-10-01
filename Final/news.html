@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        header {
+            padding: 10px;
+        }
+            
+        
+        .header h1 {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 22px;
+          color: #151E3F;
+          font-weight: 300;
+          letter-spacing: 2px;
+        }
+        
+        .wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+            margin: 5px;
+        }
+        
+        .media {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center; 
+          padding: 3px;
+        }
+        .media img {
+              max-width: 100%;
+              height: auto;
+              
+            }
+        
+        
+        .layer {
+          opacity: 0;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 10px;
+          height: 90%;
+          background: #FFF;
+          color: #151E3F;
+          transition: all 0.9s ease; }
+        .layer p {
+            transition: all 0.9s ease;
+            transform: scale(0.1)
+          }
+        
+        
+        p {
+          font-family: 'Josefin Sans', sans-serif;
+          font-weight:700;
+          text-align: center;
+          font-size: 15px;
+          letter-spacing:1px;
+        }
+        
+        .media:hover .layer {
+          opacity: 0.8;
+          width: 90%;
+          transition: all 0.5s ease; }
+        
+        .media:hover .layer p {
+            transform: scale(1);
+            transition: all 0.9s ease; }
+        
+        
+        
+        
+        
+        @media (max-width: 775px) {
+            .wrapper {
+            display: block; }
+            
+            
+         }
+        </style>
+</head>
+<body>
+    <div id="bannerimage">
+        
+        <img src="images/nclogo.png" alt="nclogo1">
+        <h1> The Nebula Corporation </h1>
+    </div>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a class="active" href="news.html">News</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div id="bannerimage2">
+       <div class="logo2"> <img src="images/logob.png" alt="b2logo"> </div>
+    </div>
+        
+    
+
+<div id="container">
+    <nav>
+        <button onclick="window.location.href='about.html';" class="bouncy button1">
+            <img src="images/nclogo.png" alt="logo">
+            <span class="text1">About</span> </button>
+        <button onclick="window.location.href='news.html';" class="bouncy button1" style="animation-delay:0.07s">
+            <img src="images/newsbutton.png" alt="logo">
+            <span class="text1">News</span> </button>
+        <button onclick="window.location.href='careers.html';" class="bouncy button1" style="animation-delay:0.14s">
+            <img src="images/carbutton.png" alt="logo">
+            <span class="text1">Careers</span> </button>
+        <button onclick="window.location.href='products.html';" class="bouncy button1" style="animation-delay:0.21s">
+            <img src="images/shopbutton.png" alt="logo">
+            <span class="text1">Our Products</span> </button>
+        <button onclick="window.location.href='contact.html';" class="bouncy button1" style="animation-delay:0.28s">
+            <img src="images/contactbutton.png" alt="logo">
+            <span class="text1">Contact Us</span> 
+        </button>
+    </nav>
+    <header>
+        <h1>Nebula Corp Newspage</h1>
+        <p> Hover over the images below (just tap and hold for mobile users) to view The Nebula Corporation's latest news stories</p>
+
+    </header>
+    
+    <main>
+        <div id="upper_flex">
+            <div class="wrapper">
+                <div class="media">
+                <div class="layer">
+                    <p>For the first time since the space race, Nebula Corp has teamed up with nasa to build and launch a experimental weather controlling satalite.</p>
+                  </div>
+                <img src="images/nasa1.png" alt="space" />
+                </div>
+                 <div class="media">
+                <div class="layer">
+                    <p>Micheal Bean takes over as head researcher of Nebula Corps wormhole project after the mysterious dissapearance of the previous head researcher during a experiment.</p>
+                  </div>
+                <img src="images/guy1.png" alt="dude" />
+                </div>
+                   <div class="media">
+                <div class="layer">
+                    <p>Nebula Corp opens a new reasearch lab for Genetic Engineering located in New Zealand!</p>
+                  </div>
+                <img src="images/bio1.png" alt="bio" />
+                </div>
+                <div class="media">
+                    <div class="layer">
+                        <p>Nebula Corps team of astronauts have succefully landed and set foot on mars, and are projected to finish constructing a base of operations in 2 months.</p>
+                      </div>
+                    <img src="images/mars1.png" alt="mars" />
+                    </div>
+            </div>
+        </div>
+
+        <div id="lower_flex">
+            <div class="col">
+                <h3>Nebula Corp's Matter Transporter</h3>
+                <img src="images/device.jpg" alt="Drange">
+                <p>Just released! Buy it today and get free shipping </p>
+                
+                <a class="button" href="products.html">Nebula Corp Shop...</a>
+            </div>
+            <div class="col">
+                <h3>Interested in having a future at Nebula Corp.?</h3>
+                <img src="images/careers1.jpg" alt="Drange">
+                <p> Visit our careers page to find out if Nebula Corp is right for you.</p>
+                <a class="button" href="careers.html">Learn More...</a>
+            </div>
+            <div class="col">
+            <h3>Questions or Concerns?</h3>
+                <img src="images/rep.jpg" alt="Drange">
+                <p>Nebula Corp's team of friendly customer service represenatives are happy to answer any questions you might have, visit our contact page to find out how to reach us.</p>
+                <a class="button" href="contact.html">Learn More...</a>
+            </div>
+        </div>
+    </main>
+    <footer>&copy; 2021 Nebula Corporation</footer>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+        aside img {
+        display: flex;
+        margin:0 auto;
+        min-width: 550px;
+        box-shadow: 6px 6px 6px #494949;
+        border-radius: 10px;
+        position:absolute;
+        left:0;
+        transition: opacity 1s ease-in-out;
+        max-width: 65%;
+    }
+    
+    aside {
+      position:relative;
+      height:281px;
+      margin:0 auto;
+      
+    
+    }
+    
+    
+    aside img.top:hover {
+        opacity: 0;
+    
+    }
+    @media (max-width: 776px) { 
+        aside img{
+            min-width: 400px;
+        }
+    
+    }
+    
+</style>
+    
+</head>
+<body>
+    <div id="bannerimage">
+        
+        <img src="images/nclogo.png" alt="nclogo1">
+        <h1> The Nebula Corporation </h1>
+    </div>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="news.html">News</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div id="bannerimage2">
+       <div class="logo2"> <img src="images/logob.png" alt="b2logo"> </div>
+    </div>
+        
+    
+
+<div id="container">
+    <nav>
+            <button onclick="window.location.href='about.html';" class="bouncy button1">
+                <img src="images/nclogo.png" alt="logo">
+                <span class="text1">About</span> </button>
+            <button onclick="window.location.href='news.html';" class="bouncy button1" style="animation-delay:0.07s">
+                <img src="images/newsbutton.png" alt="logo">
+                <span class="text1">News</span> </button>
+            <button onclick="window.location.href='careers.html';" class="bouncy button1" style="animation-delay:0.14s">
+                <img src="images/carbutton.png" alt="logo">
+                <span class="text1">Careers</span> </button>
+            <button onclick="window.location.href='products.html';" class="bouncy button1" style="animation-delay:0.21s">
+                <img src="images/shopbutton.png" alt="logo">
+                <span class="text1">Our Products</span> </button>
+            <button onclick="window.location.href='contact.html';" class="bouncy button1" style="animation-delay:0.28s">
+                <img src="images/contactbutton.png" alt="logo">
+                <span class="text1">Contact Us</span> 
+            </button>
+    </nav>
+    <header>
+        <h1>Nebula Corp Home</h1>
+
+    </header>
+    
+    <main>
+        <div id="upper_flex">
+            <section>
+                <img src="images/research.jpg" alt="h2 image">
+                <h2> Innovation Like Never Before </h2>
+            <p>  The Nebula Corporation is on the leading leading edge of scientific research. With the help of our teams of highly skilled scientists and a little help from quantum computer powered AI we have discovered astonishing new tech never seen before in human history. And thanks to Nebula Corp's most recent agreement with the US Government, This new technology can be in your own home. Feel free to visit the about page to learn more about The Nebula Corporation. </p>
+                
+            </section>
+            <aside>
+                <img class="bottom" src="images/ncnight.jpg" alt="night">
+                <img class="top" src="images/ncday.jpg" alt="day">
+            </aside>
+        </div>
+
+        <div id="lower_flex">
+            <div class="col">
+                <h3>Nebula Corp's Matter Transporter</h3>
+                <img src="images/device.jpg" alt="Drange">
+                <p>Just released! Buy it today and get free shipping </p>
+                
+                <a class="button" href="products.html">Nebula Corp Shop...</a>
+            </div>
+            <div class="col">
+                <h3>Interested in having a future at Nebula Corp.?</h3>
+                <img src="images/careers1.jpg" alt="Drange">
+                <p> Visit our careers page to find out if Nebula Corp is right for you.</p>
+                <a class="button" href="careers.html">Learn More...</a>
+            </div>
+            <div class="col">
+            <h3>Questions or Concerns?</h3>
+                <img src="images/rep.jpg" alt="Drange">
+                <p>Nebula Corp's team of friendly customer service represenatives are happy to answer any questions you might have, visit our contact page to find out how to reach us.</p>
+                <a class="button" href="contact.html">Learn More...</a>
+            </div>
+        </div>
+    </main>
+    <footer>&copy; 2021 Nebula Corporation</footer>
+
+</div>
+</body>
+</html>
